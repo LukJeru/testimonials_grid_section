@@ -18,9 +18,9 @@ body {
 
 //colors
 
-$purple-50: #733FC8;
+$purple-500: #733FC8;
 $purple-300: #A775F1;
-$purple-500: #EDE4FF;
+$purple-50: #EDE4FF;
 
 $grey-100: #E7EAEE;
 $grey-200: #CFCFCF;
@@ -51,18 +51,71 @@ $white: #FFFFFF;
   line-height: 110%;
 }
 
-//card
+main {
+  background-color: $grey-100;
+}
 .content {
-  margin: 4.5rem 2rem;
   display: flex;
   flex-direction: column;
+  margin: 2.5rem 2rem;
   gap: 2rem;
 }
 
 .card {
-  border: 1px solid black;
+  border: none;
   border-radius: 8px;
   padding: 2rem;
+}
+
+#daniel {
+  background-color: $purple-500;
+
+  h1, bold {
+    color: $white;
+  }
+  p, span {
+    color: $purple-50;
+  }
+}
+
+#jonathan {
+  background-color: $grey-500;
+
+  h1, bold {
+    color: $white;
+  }
+  p{
+    color: $grey-100;
+  }
+
+  span {
+    color: $grey-200;
+  }
+}
+
+#jeanette, #kira {
+  background-color: $white;
+
+  h1, bold {
+    color: $grey-500;
+  }
+  p, span{
+    color: $grey-400;
+  }
+}
+
+#patrick {
+  background-color: $dark-blue;
+
+  h1{
+    color: $grey-200;
+  }
+  bold, span {
+    color: $white;
+  }
+  p {
+    color: $grey-100;
+  }
 }
 
 //profile

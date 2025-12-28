@@ -34,17 +34,67 @@ body {
   line-height: 110%;
 }
 
+main {
+  background-color: #E7EAEE;
+}
+
 .content {
-  margin: 4.5rem 2rem;
   display: flex;
   flex-direction: column;
+  margin: 2.5rem 2rem;
   gap: 2rem;
 }
 
 .card {
-  border: 1px solid black;
+  border: none;
   border-radius: 8px;
   padding: 2rem;
+}
+
+#daniel {
+  background-color: #733FC8;
+}
+#daniel h1, #daniel bold {
+  color: #FFFFFF;
+}
+#daniel p, #daniel span {
+  color: #EDE4FF;
+}
+
+#jonathan {
+  background-color: #48556A;
+}
+#jonathan h1, #jonathan bold {
+  color: #FFFFFF;
+}
+#jonathan p {
+  color: #E7EAEE;
+}
+#jonathan span {
+  color: #CFCFCF;
+}
+
+#jeanette, #kira {
+  background-color: #FFFFFF;
+}
+#jeanette h1, #jeanette bold, #kira h1, #kira bold {
+  color: #48556A;
+}
+#jeanette p, #jeanette span, #kira p, #kira span {
+  color: #676D7E;
+}
+
+#patrick {
+  background-color: #19202D;
+}
+#patrick h1 {
+  color: #CFCFCF;
+}
+#patrick bold, #patrick span {
+  color: #FFFFFF;
+}
+#patrick p {
+  color: #E7EAEE;
 }
 
 .profile {
