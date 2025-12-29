@@ -15,22 +15,22 @@ body {
 }
 
 .text h1 {
-  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   line-height: 120%;
 }
 
 .profile .profile-text bold {
-  font-size: 0.8125rem;
+  font-size: clamp(0.8125rem, 1.1vw, 1.1rem);
   line-height: 110%;
 }
 
 .text p {
-  font-size: 0.775rem;
+  font-size: clamp(0.775rem, 1vw, 1rem);
   line-height: 140%;
 }
 
 .profile .profile-text span {
-  font-size: 0.6875rem;
+  font-size: clamp(0.6875rem, 0.8vw, 0.9rem);
   line-height: 110%;
 }
 
@@ -113,4 +113,36 @@ main {
 }
 .text h1 {
   margin-bottom: 1rem;
+}
+.attribution {
+  text-align: center;
+}
+
+@media only screen and (min-width: 556px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  #daniel {
+    grid-column: 1/span 2;
+    grid-row: 1;
+  }
+  #jonathan {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #jeanette {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #patrick {
+    grid-column: 1/span 2;
+    grid-row: 3;
+  }
+  #kira {
+    grid-column: 1/span 2;
+    grid-row: 4;
+  }
 }/*# sourceMappingURL=style.css.map */
